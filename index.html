@@ -316,19 +316,19 @@
         <div class="menu-container">
             <div class="menu-card" onclick="openGallery()">
                 <h3>📸 You</h3>
-                <p>Love🩷🩷</p>
+                <p>🩷🩷🩷</p>
             </div>
             
-            <div class="menu-card" onclick="openGalery()">
-                <h3>Me</h3>
-                <p>Love</p>
+            <div class="menu-card" onclick="openKataKata()">
+                <h3>💌 Kata Kata</h3>
+                <p>❤️❤️❤️</p>
             </div>
         </div>
 
         <div class="spotify-section">
             <h3>🎵 Musik Untuk Kita</h3>
             <div class="spotify-embed">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/album/1Kw1bVd07oRqcjrcjQKC8T?si=2L4LjEn8Q7mtFwULqP9Clg" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6vP4azTCk053nGL0xAYnVH?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
         </div>
     </div>
@@ -337,27 +337,36 @@
     <div class="modal" id="galleryModal">
         <div class="modal-content">
             <button class="close-btn" onclick="closeModal('galleryModal')">&times;</button>
-            <h2>💕 YOU 💕</h2>
-            <img src="https://files.catbox.moe/8owoh1.jpg" alt="Abdan" onerror="this.src='https://via.placeholder.com/600x400?text=Foto+Abdan'">
+            <h2>💕 You 💕</h2>
+            <img src="https://files.catbox.moe/8owoh1.jpg" alt="Nasya" onerror="this.src='https://via.placeholder.com/600x400?text=Foto+Abdan'">
             <p style="text-align: center; margin-top: 1rem; color: #764ba2; font-style: italic;">
-                Lovee🩷🩷
+                LOVEE❤️
+            </p>
         </div>
     </div>
 
-    <!-- Gallery Modal -->
-    <div class="modal" id="galleryModal">
+    <!-- Kata Kata Modal -->
+    <div class="modal" id="kataKataModal">
         <div class="modal-content">
-            <button class="close-btn" onclick="closeModal('galleryModal')">&times;</button>
-            <h2>💕 YOU 💕</h2>
-            <img src="https://files.catbox.moe/rrnytm.jpg" alt="Abdan" onerror="this.src='https://via.placeholder.com/600x400?text=Foto+Abdan'">
-            <p style="text-align: center; margin-top: 1rem; color: #764ba2; font-style: italic;">
-                Lovee🩷🩷
+            <button class="close-btn" onclick="closeModal('kataKataModal')">&times;</button>
+            <h2>💌 Kata-Kata</h2>
+            <div class="typing-text" id="typingText"></div>
         </div>
     </div>
 
     <script>
         const loveMessages = [
-             "."
+            "Setiap detik bersamamu adalah keajaiban yang tak pernah ku sangka akan ku alami. Kamu adalah jawaban dari doa-doa yang bahkan belum sempat ku ucapkan.",
+            "Di antara jutaan bintang di langit, matamu adalah yang paling bersinar. Di antara jutaan orang di dunia, hanya kamu yang membuat jantungku berdetak lebih cepat.",
+            "Cinta bukan tentang menemukan orang yang sempurna, tapi tentang melihat kesempurnaan dalam ketidaksempurnaan seseorang. Dan aku melihat itu semua dalam dirimu.",
+            "Aku tidak tahu apa yang akan terjadi di masa depan, tapi satu hal yang ku tahu pasti: aku ingin menghabiskan setiap detiknya bersamamu.",
+            "Kamu bukan hanya cinta dalam hidupku, tapi juga alasan mengapa aku percaya bahwa keajaiban itu nyata dan cinta sejati itu ada.",
+            "Setiap kali aku melihatmu tersenyum, dunia terasa lebih indah. Setiap kali aku mendengar suaramu, hari-hariku terasa lebih bermakna.",
+            "Jika cinta adalah pilihan, maka aku akan memilihmu berkali-kali dalam setiap kehidupan. Karena denganmu, aku menemukan rumah di tempat yang paling tidak ku sangka.",
+            "Kamu adalah alasan mengapa aku bangun dengan senyuman setiap pagi dan tertidur dengan kebahagiaan setiap malam. Terima kasih sudah ada dalam hidupku.",
+            "Dalam kamus hidupku, definisi bahagia adalah saat-saat sederhana bersamamu. Tertawa bersama, diam bersama, dan berbagi cerita tentang hari-hari kita.",
+            "Aku mencintaimu bukan karena siapa dirimu, tapi karena siapa diriku saat aku bersamamu. Kamu membuat versi terbaik dari diriku muncul ke permukaan.",
+            "Cinta kita mungkin tidak sempurna, tapi itulah yang membuatnya nyata. Karena cinta sejati bukan tentang kesempurnaan, tapi tentang menerima dan tumbuh bersama."
         ];
 
         function login() {
